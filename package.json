@@ -1,0 +1,23 @@
+{
+  "name": "magma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VjRawat/Magma.git"
+  },
+  "author": "VjRawat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VjRawat/Magma/issues"
+  },
+  "homepage": "https://github.com/VjRawat/Magma#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

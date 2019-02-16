@@ -1,0 +1,19 @@
+@mixin colorWhite {
+    &:hover {
+        color: #eee;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin imgProp {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}

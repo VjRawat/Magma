@@ -1,0 +1,72 @@
+.header {
+    height: 10vh;
+    font-size: 1.5rem;
+    background-color: $color-primary;
+    top: 0;
+    left: 0;
+
+    &__navbar {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-transform: uppercase;
+        
+
+        & a {
+            text-decoration: none;
+            padding: 0.2rem;
+            margin: 2rem;
+            color: #eee;
+            
+            background: linear-gradient(120deg,  $color-primary 0%, $color-primary 50%, orangered 50%);
+            background-size: 250%;
+            transition: all 1s;
+            border-radius: 3px;
+
+            &:hover{
+                background-position: 100%;
+                // background-image: linear-gradient(120deg, orangered 0%, orangered 100%);
+
+
+                // animation-name: moveInLeft;
+                // animation-duration: 2s;
+            }
+        } 
+    }
+    
+    #magPat {
+        color: #000;
+        margin: 1.2rem 7rem 0.2rem 8rem;
+        padding: .5rem 0rem 1.5rem .8rem;
+        height: 4rem;
+        width: 13rem;
+
+       @include colorWhite;
+
+       & span {
+           text-align: center;
+           margin-left: .2rem;
+           font-size: 1rem;
+       }
+    }
+
+    #tf {
+        margin: 2.5rem 0 0 0;
+        cursor: pointer;
+        @include colorWhite;
+    }
+
+    #tf-1 {
+        margin: 2.8rem 0 0 .5rem;
+    }
+    // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    //         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //         height: 95vh;
+}

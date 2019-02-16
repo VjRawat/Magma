@@ -1,0 +1,98 @@
+.footer {
+    height: 38vh;
+    width: 100%;
+    color: #eee;
+    padding: 1rem 9rem 1rem;
+    font-size: 1.5rem;
+    // background-color: rgba($color: #000000, $alpha: .7);
+    background-color: rgba(#000, .7);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // justify-content: space-around;
+
+    &__container {
+        height: 38vh;
+        overflow: hidden;
+        padding: 2rem;
+        
+
+        &--location {
+            display: flex;
+            flex-direction: row;
+            
+            &-img {
+                @include imgProp;
+                // Older Browsers !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                background-image: url(/images/location.svg);
+                background-size: cover;
+
+
+                // Newer Browsers -masks !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                // background-color: #fff;
+                // --webkit-mask-image: url(../images/location.svg);
+                // --webkit-mask-size: cover;
+            }
+
+            &-text {
+                margin: .8rem 2rem;
+            }
+        }
+
+        &--call {
+            display: flex;
+            flex-direction: row;
+
+            &-img {
+                @include imgProp;
+                background-image: url(/images/call.svg);
+                background-size: cover;
+
+            }
+
+            &-text {
+                margin: 3rem 2rem;
+            }
+        }
+
+        &--email {
+            display: flex;
+            flex-direction: row;
+            margin-top: -2rem;
+
+            &-img {
+               @include imgProp;
+                background-image: url(/images/mail.svg);
+                background-size: cover;
+
+            }
+
+            &-text {
+                margin: 2.5rem 2.5rem;
+            }
+        }
+
+        
+    
+    &__about {
+            
+        p {
+            text-align: justify;
+            }
+        }
+    }
+
+
+
+    img {
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+        margin-top: 2.5rem;
+
+        &:hover{
+            opacity: .5;
+        }
+    }
+}

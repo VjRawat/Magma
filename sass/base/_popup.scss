@@ -1,0 +1,65 @@
+// ************************** A popup class for loan contacts **************************************
+.popup {
+    // display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // transform: translate(-50%, -50%);
+    background-color: rgba(black, .9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--content {
+        @include absCenter;
+        width: 60%;
+        height: 50rem;
+        background-color: rgba(#fff, 1);
+        box-shadow: 0 2rem 4rem rgba(#000, .2);
+        border-radius: 3px;
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 4rem;
+        padding: 4rem;
+    }
+
+    &__close {
+        &:link,
+        &:visited{
+            font-size: 4rem;
+            position: absolute;
+            top: -1%;
+            text-decoration: none;
+            right: 2%;
+            z-index: 9999;
+            color: #233746;
+
+            &:hover {
+                color: orangered;
+            }
+        }
+    }
+}
+
+.branch, .call, .media, .customer  {
+    background-color: rgba( blue, .5);
+    text-align: center;
+    // color: #eee;
+    font-size: 2rem;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 2rem 4.5rem rgba(#000, .5);
+    }
+}
+
