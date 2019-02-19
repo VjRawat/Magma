@@ -17,3 +17,40 @@
     margin-top: 1.5rem;
     cursor: pointer;
 }
+
+
+// **************************   Placeholders ************************
+
+%section {
+    margin-bottom: 5rem;
+
+    h1 {
+        margin: 1rem 0rem ;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 1rem;
+        border: 1px solid yellow;
+        background: black;
+
+        &:hover {
+            background-color: green;
+            color: #eee;
+            transition: all .5s;
+        }
+
+    }
+
+    img {
+        height: 40vh;
+        width: 100%;
+    }
+}

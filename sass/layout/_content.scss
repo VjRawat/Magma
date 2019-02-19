@@ -35,42 +35,51 @@
         }
     }
 
-    &__content--sidebar {
-        background-color: rgba(128,128,128, .7);
+    &__content {
+
+        &--sidebar{
+        background-color: rgba(128,128,128, .6);
         height: 126vh;
         width: 40%;
         margin: 3.5rem;
         color: #000;
         font-size: 1rem;
         text-align: justify;
-        padding: 1rem;
-        box-shadow: 0rem 0rem .8rem .4rem rgba(#000, .5);  
-
-        h1 {
-            margin: 1rem 0rem ;
+        padding: .5rem 1rem;
+        box-shadow: 0rem 0rem .8rem .4rem rgba(#000, .5); 
+        overflow: hidden;
+        
+        position: relative;
         }
 
-        p {
-            font-size: 1.5rem;
+        &--section1 {
+           @extend %section;
+           animation: moveup 30s 5s infinite; 
+           transition: all 10s;
+
+           &-image {
+            height: 40vh;
+            animation: moveInLeft 1s;
+           }
+
+           &-text {
+            animation: moveDown 2s;
+           }
+        } 
+        
+        &--section2 {
+            @extend %section;
+
+            // animation: moveup 15s infinite;
+            transition: all 12s;
         }
 
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            color: #0000FF;
-
-            &:hover {
-                background-color: green;
-                color: #eee;
-                transition: all .5s;
-            }
-            
+        &--section3 {
+            @extend %section;
         }
 
-        img {
-            height: 40%;
-            width: 100%;
+        &--section4 {
+            @extend %section;
         }
     }
 
