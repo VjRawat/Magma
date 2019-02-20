@@ -25,13 +25,49 @@
 }
 
 @keyframes moveup {
+    // ***************************** First section - AUTO LEASE LOAN
     0% {
-        opacity: 1;
-        
+        opacity: 1;    
       }
 
-      100% {
-        margin-top: -500vh;
+    // ***************************** Second section - HOUSING FINANCE
+    13% {
+        margin-top: -80vh;
+    }
+
+    // ***************************** Third section - SME LOANS
+    26% {
+        margin-top: calc(2* (-87vh));
+    }
+
+    // ***************************** Fourth section - CAR LOAN
+    39% {
+        margin-top: calc(3* (-87vh));
+    }
+
+    // ***************************** Fifth section - CONSTRUCTION EQUIPMENT LOAN
+    52% {
+        margin-top: calc(4* (-87vh));
+    }
+
+    // ***************************** Sixth section - TRACTOR LOAN
+    65% {
+        margin-top: calc(5* (-86vh));
+    }
+
+    // ***************************** Seventh section - USED VEHICLE LOAN
+    78% {
+        margin-top: calc(6* (-87.5vh));
+    }
+
+    // ***************************** Eight section - COMMERCIAL VEHICLE LOAN
+    91% {
+        margin-top: calc(7* (-86vh));
+    }
+
+    // ***************************** End section
+    100% {
+        margin-top: calc(8* (-87vh));
       }
 }
 

@@ -31,6 +31,8 @@
                 cursor: pointer;
                 opacity: .4;
                 background-color: $color5;
+                transition: all 1s;
+                transform: scale(-2rem, -2rem);
             }
         }
     }
@@ -50,11 +52,16 @@
         overflow: hidden;
         
         position: relative;
+
+        h1 {
+            text-transform: uppercase;
+        }
+
         }
 
         &--section1 {
            @extend %section;
-           animation: moveup 30s 5s infinite; 
+           animation: moveup 50s 5s infinite; 
            transition: all 10s;
 
            &-image {
@@ -79,6 +86,22 @@
         }
 
         &--section4 {
+            @extend %section;
+        }
+        
+        &--section5 {
+            @extend %section;
+        }
+
+        &--section6 {
+            @extend %section;
+        }
+
+        &--section7 {
+            @extend %section;
+        }
+
+        &--section8 {
             @extend %section;
         }
     }

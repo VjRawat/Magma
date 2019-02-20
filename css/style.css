@@ -1,11 +1,11 @@
 /* RGB */
-.main__content--section1, .main__content--section2, .main__content--section3, .main__content--section4 {
+.main__content--section1, .main__content--section2, .main__content--section3, .main__content--section4, .main__content--section5, .main__content--section6, .main__content--section7, .main__content--section8 {
   margin-bottom: 5rem; }
-  .main__content--section1 h1, .main__content--section2 h1, .main__content--section3 h1, .main__content--section4 h1 {
+  .main__content--section1 h1, .main__content--section2 h1, .main__content--section3 h1, .main__content--section4 h1, .main__content--section5 h1, .main__content--section6 h1, .main__content--section7 h1, .main__content--section8 h1 {
     margin: 1rem 0rem; }
-  .main__content--section1 p, .main__content--section2 p, .main__content--section3 p, .main__content--section4 p {
+  .main__content--section1 p, .main__content--section2 p, .main__content--section3 p, .main__content--section4 p, .main__content--section5 p, .main__content--section6 p, .main__content--section7 p, .main__content--section8 p {
     font-size: 1.5rem; }
-  .main__content--section1 a, .main__content--section2 a, .main__content--section3 a, .main__content--section4 a {
+  .main__content--section1 a, .main__content--section2 a, .main__content--section3 a, .main__content--section4 a, .main__content--section5 a, .main__content--section6 a, .main__content--section7 a, .main__content--section8 a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -13,11 +13,11 @@
     padding: 1rem;
     border: 1px solid yellow;
     background: black; }
-    .main__content--section1 a:hover, .main__content--section2 a:hover, .main__content--section3 a:hover, .main__content--section4 a:hover {
+    .main__content--section1 a:hover, .main__content--section2 a:hover, .main__content--section3 a:hover, .main__content--section4 a:hover, .main__content--section5 a:hover, .main__content--section6 a:hover, .main__content--section7 a:hover, .main__content--section8 a:hover {
       background-color: green;
       color: #eee;
       transition: all .5s; }
-  .main__content--section1 img, .main__content--section2 img, .main__content--section3 img, .main__content--section4 img {
+  .main__content--section1 img, .main__content--section2 img, .main__content--section3 img, .main__content--section4 img, .main__content--section5 img, .main__content--section6 img, .main__content--section7 img, .main__content--section8 img {
     height: 40vh;
     width: 100%; }
 
@@ -52,8 +52,22 @@ body {
 @keyframes moveup {
   0% {
     opacity: 1; }
+  13% {
+    margin-top: -80vh; }
+  26% {
+    margin-top: calc(2* (-87vh)); }
+  39% {
+    margin-top: calc(3* (-87vh)); }
+  52% {
+    margin-top: calc(4* (-87vh)); }
+  65% {
+    margin-top: calc(5* (-86vh)); }
+  78% {
+    margin-top: calc(6* (-87.5vh)); }
+  91% {
+    margin-top: calc(7* (-86vh)); }
   100% {
-    margin-top: -500vh; } }
+    margin-top: calc(8* (-87vh)); } }
 
 .popup {
   height: 100vh;
@@ -180,7 +194,7 @@ body {
     .header__list a {
       text-decoration: none;
       padding: 0.2rem;
-      margin: 2rem;
+      margin: 2rem 1.5rem 2rem 3.2rem;
       color: #eee;
       background: linear-gradient(120deg, #6784BC 0%, #6784BC 50%, orangered 50%);
       background-size: 250%;
@@ -230,7 +244,9 @@ body {
       .main__content--container img:hover {
         cursor: pointer;
         opacity: .4;
-        background-color: rgba(225, 244, 244, 0.7); }
+        background-color: rgba(225, 244, 244, 0.7);
+        transition: all 1s;
+        transform: scale(-2rem, -2rem); }
   .main__content--sidebar {
     background-color: rgba(128, 128, 128, 0.6);
     height: 126vh;
@@ -243,8 +259,10 @@ body {
     box-shadow: 0rem 0rem 0.8rem 0.4rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
     position: relative; }
+    .main__content--sidebar h1 {
+      text-transform: uppercase; }
   .main__content--section1 {
-    animation: moveup 30s 5s infinite;
+    animation: moveup 50s 5s infinite;
     transition: all 10s; }
     .main__content--section1-image {
       height: 40vh;
