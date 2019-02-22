@@ -12,11 +12,19 @@
     justify-content: space-around;
     // justify-content: space-around;
 
+    @media screen and (max-width: 75em) {
+        height: 25%;
+    }
+
     &__container {
         height: 38vh;
         overflow: hidden;
         padding: 2rem;
         
+        
+        @media screen and (max-width: 75em) {
+        height: 100%;
+        }
 
         &--location {
             display: flex;

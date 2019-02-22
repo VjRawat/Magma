@@ -5,6 +5,17 @@
     top: 0;
     left: 0;
 
+    @media screen and (max-width: 112em) {
+        height: 7vh;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 75em) {
+        height: 7vh;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
     &__navbar {
 
         display: flex;
@@ -22,12 +33,17 @@
             text-decoration: none;
             padding: 0.2rem;
             margin: 2rem 1.5rem 2rem 3.2rem;
-            color: #eee;
+            color: $color-white;
             
             background: linear-gradient(120deg,  $color-primary 0%, $color-primary 50%, orangered 50%);
-            background-size: 250%;
+            background-size: 220%;
             transition: all 1s;
             border-radius: 3px;
+
+            @media screen and (max-width: 75em) {
+                font-size: 1.4rem;
+                margin: 2rem 1rem 2rem 2rem;                
+            }
 
             &:hover{
                 background-position: 100%;
@@ -45,9 +61,10 @@
         margin: 1.2rem 7rem 0.2rem 8rem;
         padding: .5rem 0rem 1.5rem .8rem;
         height: 4rem;
+        color: $color-white;
         width: 13rem;
 
-       @include colorWhite;
+    //    @include colorWhite;
 
        & span {
            text-align: center;
@@ -59,11 +76,20 @@
     #tf {
         margin: 2.5rem 0 0 0;
         cursor: pointer;
-        @include colorWhite;
+        color: $color-white;
+        // @include colorWhite;
     }
 
     #tf-1 {
         margin: 2.8rem 0 0 .5rem;
+        color: $color-white;  
+        @media screen and (max-width: 112em) {
+            margin: 2.8rem 0 0 3.5rem;
+        } 
+        
+        @media screen and (max-width: 75em) {
+            margin: 2.8rem 0 0 5rem;
+        } 
     }
     // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     //         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

@@ -1,10 +1,14 @@
 .main {
-    height: 140vh;
+    height: 100%;
     width: 100%;
     background-color: $color5;
 
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 75em){
+        height: 100%;
+    }
 
     &__photo--container {
         height: 50vh;
@@ -13,26 +17,46 @@
 
 
     &__content--container {
-        height: 60vh;
+        height: 90%;
         width: 60%;
         padding: 3.5rem;
         display: grid;
-        grid-template-columns: repeat(2 , 52%);
-        grid-template-rows: repeat(4, 60%);
+        grid-template-columns: repeat(2 , 50%);
+        grid-template-rows: repeat(4, 100%);
         // grid-area: 10rem;
         grid-gap: 1.5rem;
+
+        @media screen and (max-width: 112em){
+            height: 90%;
+        }
+
+        @media screen and (max-width: 75em){
+            height: 95%;
+            grid-template-columns: repeat(2 , 51%);
+            grid-template-rows: repeat(4, 27%);
+            grid-gap: 1rem;
+            margin: -3rem .5rem .2rem .5rem;
+        }
 
         img {
             height: 30vh;
             width: 100%;
             // background-position: center;
+            @media screen and (max-width: 112em){
+                height: 25vh;
+            }
+
+            @media screen and (max-width: 75em) {
+                height: 24vh;
+                border: 2px solid;
+            }
 
             &:hover {
                 cursor: pointer;
                 opacity: .4;
                 background-color: $color5;
                 transition: all 1s;
-                transform: scale(-2rem, -2rem);
+                transform: scale(2rem, 2rem);
             }
         }
     }
@@ -40,7 +64,7 @@
     &__content {
 
         &--sidebar{
-        background-color: rgba(128,128,128, .6);
+        background-color: $color-white;
         height: 126vh;
         width: 40%;
         margin: 3.5rem;
@@ -48,21 +72,41 @@
         font-size: 1rem;
         text-align: justify;
         padding: .5rem 1rem;
-        box-shadow: 0rem 0rem .8rem .4rem rgba(#000, .5); 
+        // box-shadow: 0rem 0rem .8rem .4rem rgba(#000, .5); 
+        border: 1px solid;
         overflow: hidden;
         
         position: relative;
 
+        &:hover {
+            animation-play-state: paused;
+        }
+
+        @media screen and (max-width: 75em){
+            height: 98%;
+            margin-top: 1.2rem
+        }
+
         h1 {
             text-transform: uppercase;
+        }
+
+        hr {
+            height: 1rem;
+            background-color: black;
         }
 
         }
 
         &--section1 {
            @extend %section;
-           animation: moveup 50s 5s infinite; 
+           animation: moveup 20s 5s 10 linear; 
            transition: all 10s;
+
+           &:hover {
+               animation-play-state: paused;
+               cursor: pointer;
+           }
 
            &-image {
             height: 40vh;
@@ -71,38 +115,86 @@
 
            &-text {
             animation: moveDown 2s;
+
+            @media screen and (max-width: 75em) {
+                margin: -15rem 0 10rem;
+            }
            }
         } 
         
         &--section2 {
             @extend %section;
 
+            &:hover {
+                animation-play-state: paused;
+            }
             // animation: moveup 15s infinite;
             transition: all 12s;
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
 
         &--section3 {
             @extend %section;
+            
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
 
         &--section4 {
             @extend %section;
+
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
         
         &--section5 {
             @extend %section;
+
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
 
         &--section6 {
             @extend %section;
+
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
 
         &--section7 {
             @extend %section;
+
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
 
         &--section8 {
             @extend %section;
+
+            &-text {
+                @media screen and (max-width: 75em) {
+                    margin: 3rem 0 10rem 0;   
+                }
+            }
         }
     }
 
