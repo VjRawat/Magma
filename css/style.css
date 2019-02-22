@@ -115,7 +115,7 @@ body {
     box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.5); }
 
 .footer {
-  height: 38vh;
+  height: 40%;
   width: 100%;
   color: #eee;
   padding: 1rem 9rem 1rem;
@@ -182,18 +182,20 @@ body {
       opacity: .5; }
 
 .header {
-  height: 10vh;
+  height: 20vh;
   font-size: 1.5rem;
   background-color: #6784BC;
   top: 0;
-  left: 0; }
+  left: 0;
+  overflow: hidden; }
   @media screen and (max-width: 112em) {
     .header {
-      height: 7vh;
-      font-size: 1.2rem; } }
+      height: 10vh;
+      font-size: 1.45rem;
+      margin-right: 1rem; } }
   @media screen and (max-width: 75em) {
     .header {
-      height: 7vh;
+      height: 10vh;
       font-size: 1.3rem;
       padding: 1rem; } }
   .header__navbar {
@@ -261,7 +263,7 @@ body {
     padding: 3.5rem;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 100%);
+    grid-template-rows: repeat(4, 26%);
     grid-gap: 1.5rem; }
     @media screen and (max-width: 112em) {
       .main__content--container {
@@ -274,14 +276,14 @@ body {
         grid-gap: 1rem;
         margin: -3rem .5rem .2rem .5rem; } }
     .main__content--container img {
-      height: 30vh;
+      height: 100%;
       width: 100%; }
       @media screen and (max-width: 112em) {
         .main__content--container img {
-          height: 25vh; } }
+          height: 100%; } }
       @media screen and (max-width: 75em) {
         .main__content--container img {
-          height: 24vh;
+          height: 100%;
           border: 2px solid; } }
       .main__content--container img:hover {
         cursor: pointer;
@@ -291,7 +293,7 @@ body {
         transform: scale(2rem, 2rem); }
   .main__content--sidebar {
     background-color: #eee;
-    height: 126vh;
+    height: 90%;
     width: 40%;
     margin: 3.5rem;
     color: #000;

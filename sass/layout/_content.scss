@@ -22,7 +22,7 @@
         padding: 3.5rem;
         display: grid;
         grid-template-columns: repeat(2 , 50%);
-        grid-template-rows: repeat(4, 100%);
+        grid-template-rows: repeat(4, 26%);
         // grid-area: 10rem;
         grid-gap: 1.5rem;
 
@@ -39,15 +39,15 @@
         }
 
         img {
-            height: 30vh;
+            height: 100%;
             width: 100%;
             // background-position: center;
             @media screen and (max-width: 112em){
-                height: 25vh;
+                height: 100%;
             }
 
             @media screen and (max-width: 75em) {
-                height: 24vh;
+                height: 100%;
                 border: 2px solid;
             }
 
@@ -65,7 +65,7 @@
 
         &--sidebar{
         background-color: $color-white;
-        height: 126vh;
+        height: 90%;
         width: 40%;
         margin: 3.5rem;
         color: #000;
